@@ -101,3 +101,13 @@ select nombre, apellido1, apellido2
 from comercial
 where comision between 0.05 and 0.11;
 
+-- Devuelve cuál ha sido el pedido de máximo valor que se ha realizado cada año.
+
+select * 
+from pedido
+where max(total);
+
+-- Con un procedimiento (procedure) pido de parametro una letra y devuelvo los clientes
+-- que contienen dicha letra
+
+call clientes_con_letra('o');
